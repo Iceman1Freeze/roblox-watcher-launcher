@@ -1,0 +1,32 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f0f4f1;background:#101713;font-synthesis:none;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;background:radial-gradient(ellipse at 70% 0%,#263e2c 0,transparent 58%),#101713}
+main{width:min(100% - 40px,560px);margin:auto;padding:56px 0 24px}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:4px}
+.wordmark{display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.16em;font-weight:700;margin-bottom:32px}
+.mark{width:19px;height:19px;background:#b6f4b3;transform:rotate(16deg);position:relative}
+.mark:after{content:"";position:absolute;inset:6px;background:#17221a}
+.card{background:#19241de8;border:1px solid #354638;border-radius:24px;padding:40px;box-shadow:0 24px 80px #0003}
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:.13em;color:#b6f4b3}
+h1{font-size:clamp(36px,8vw,52px);line-height:1.08;letter-spacing:-.045em;margin:20px 0}
+.intro{font-size:16px;line-height:1.65;color:#c0cdc2;margin:0 0 26px}
+.destination{border-top:1px solid #354638;border-bottom:1px solid #354638;margin-bottom:28px}
+dl{margin:18px 0;display:grid;gap:14px}
+dl>div{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px}
+dt{color:#9cb19f;font-size:12px}
+dd{margin:0;font-family:ui-monospace,Consolas,monospace;font-size:12px;overflow-wrap:anywhere;line-height:1.5}
+.primary{display:flex;align-items:center;justify-content:space-between;width:100%;padding:18px 22px;background:#b6f4b3;color:#122615;border-radius:12px;font-weight:700;font-size:16px;transition:background .15s}
+.primary:hover{background:#d0ffcd;text-decoration:none}
+.secondary-actions{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;margin-top:20px;font-size:13px;color:#cfddd1}
+button{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #b6f4b3;outline-offset:5px}
+#manual{margin-top:26px}
+label{display:block;color:#aebeb1;font-size:12px;line-height:1.6;margin-bottom:8px}
+input{width:100%;min-width:0;border:1px solid #445647;border-radius:8px;background:#111b14;color:#c9d8cb;font:11px ui-monospace,Consolas,monospace;padding:12px}
+#status{font-size:13px;line-height:1.6;color:#d3f7cc}
+#status:empty{display:none}
+.note{font-size:12px;line-height:1.7;color:#9cb19f;margin:28px 0 0;border-top:1px solid #354638;padding-top:20px}
+.footer{color:#8fa393;font-size:11px;text-align:center;margin:22px 0 0}
+[hidden]{display:none!important}
+@media(max-width:440px){main{width:calc(100% - 28px);padding-top:28px}.card{padding:28px 22px;border-radius:18px}.wordmark{margin-bottom:24px}.secondary-actions{gap:20px;font-size:12px}}
